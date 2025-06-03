@@ -3,31 +3,31 @@ export default function FeaturesSection() {
     {
       icon: "fas fa-mountain",
       title: "SMP",
-      description: "Survival Multiplayer classico dove puoi costruire, esplorare e sopravvivere insieme ad altri giocatori nell'isola tropicale.",
+      description: "Competi con tutti i giocatori e diventa il più forte di tutti!",
       color: "text-green-500",
     },
     {
       icon: "fas fa-gift",
       title: "Gumball Box",
-      description: "Modalità speciale con premi e sorprese casuali da scoprire in misteriose scatole sparse per l'isola.",
+      description: "Un boxpvp dedicato a Gumball, Diventa il più forte e competi con tutti.",
       color: "text-purple-500",
     },
     {
       icon: "fas fa-rocket",
       title: "Space Prison",
-      description: "Avventura spaziale dove devi sopravvivere e prosperare in una prigione galattica con tecnologie futuristiche.",
+      description: "Mina nelle miniere spaziali, ricche e stupende.",
       color: "text-blue-500",
     },
     {
       icon: "fas fa-palm-tree",
       title: "Oasi",
-      description: "Modalità rilassante in un'oasi tropicale perfetta per costruire e godersi l'atmosfera paradisiaca.",
+      description: "Divertiti, fai nuove amicizie, partecipa a minigames e integrati nella community in una modalità dove ti puoi rilassare!",
       color: "text-emerald-400",
     },
     {
       icon: "fas fa-fire",
       title: "Lava Rise",
-      description: "Sfida adrenalinica dove devi sopravvivere mentre la lava sale costantemente, mettendo alla prova le tue abilità.",
+      description: "Sopravvivi in una zona ristretta con la lava che sale ogni 30 secondi, Vinci e divertiti.",
       color: "text-red-500",
     },
   ];

@@ -1,6 +1,5 @@
 import Navigation from "@/components/navigation";
 import HeroSection from "@/components/hero-section";
-import ServerStats from "@/components/server-stats";
 import FeaturesSection from "@/components/features-section";
 import DiscordSection from "@/components/discord-section";
 import Footer from "@/components/footer";
@@ -29,7 +28,6 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-sand via-white to-blue-50 dark:from-ocean-dark dark:via-ocean-gray dark:to-slate-800 text-gray-800 dark:text-gray-100 transition-all duration-500">
       <Navigation />
       <HeroSection />
-      <ServerStats />
       <FeaturesSection />
       <DiscordSection />
       <Footer />
