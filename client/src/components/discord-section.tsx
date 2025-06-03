@@ -13,10 +13,15 @@ export default function DiscordSection() {
           </div>
           <h3 className="text-2xl font-bold mb-4">Discord Server</h3>
           <p className="opacity-80 mb-6">Oltre 1,000 membri attivi della community Clibify!</p>
-          <button className="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105">
+          <a 
+            href="https://discord.gg/2zbP9CztEd" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105 inline-block"
+          >
             <i className="fab fa-discord mr-2" />
             Unisciti Ora
-          </button>
+          </a>
         </div>
       </div>
     </section>

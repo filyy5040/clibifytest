@@ -77,10 +77,15 @@ export default function HeroSection() {
             <i className="fas fa-play mr-2" />
             Inizia a Giocare
           </button>
-          <button className="px-8 py-4 glass-effect hover:bg-blue-500 hover:text-white font-semibold rounded-full shadow-lg transition-all duration-300">
+          <a 
+            href="https://discord.gg/2zbP9CztEd" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="px-8 py-4 glass-effect hover:bg-blue-500 hover:text-white font-semibold rounded-full shadow-lg transition-all duration-300 inline-block"
+          >
             <i className="fab fa-discord mr-2" />
             Unisciti a Discord
-          </button>
+          </a>
         </div>
       </div>
     </section>
