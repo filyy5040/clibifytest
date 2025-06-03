@@ -10,6 +10,16 @@ export default function HeroSection() {
       await navigator.clipboard.writeText(serverIP);
       setCopySuccess(true);
       setTimeout(() => setCopySuccess(false), 2000);
+      
+      // Show popup notification
+      const popup = document.createElement('div');
+      popup.className = 'fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-green-500 text-white px-8 py-4 rounded-lg shadow-2xl z-50 animate-pulse';
+      popup.innerHTML = '<i class="fas fa-check mr-2"></i>IP copiato nella clipboard!';
+      document.body.appendChild(popup);
+      
+      setTimeout(() => {
+        document.body.removeChild(popup);
+      }, 2000);
     } catch (err) {
       console.error("Failed to copy: ", err);
     }
@@ -60,7 +70,10 @@ export default function HeroSection() {
         </div>
 
         <div className="flex flex-col md:flex-row gap-6 justify-center">
-          <button className="px-8 py-4 island-gradient text-white font-semibold rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+          <button 
+            onClick={copyToClipboard}
+            className="px-8 py-4 island-gradient text-white font-semibold rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+          >
             <i className="fas fa-play mr-2" />
             Inizia a Giocare
           </button>

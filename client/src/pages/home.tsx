@@ -2,8 +2,6 @@ import Navigation from "@/components/navigation";
 import HeroSection from "@/components/hero-section";
 import ServerStats from "@/components/server-stats";
 import FeaturesSection from "@/components/features-section";
-import NewsSection from "@/components/news-section";
-import RulesSection from "@/components/rules-section";
 import DiscordSection from "@/components/discord-section";
 import Footer from "@/components/footer";
 import { useEffect, useState } from "react";
@@ -33,8 +31,6 @@ export default function Home() {
       <HeroSection />
       <ServerStats />
       <FeaturesSection />
-      <NewsSection />
-      <RulesSection />
       <DiscordSection />
       <Footer />
       

@@ -1,45 +1,55 @@
 export default function FeaturesSection() {
-  const features = [
+  const gameModes = [
     {
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
-      title: "Mondo Tropicale Unico",
-      description: "Esplora isole paradisiache con biomi tropicali personalizzati, spiagge cristalline e giungle misteriose piene di tesori nascosti.",
+      icon: "fas fa-mountain",
+      title: "SMP",
+      description: "Survival Multiplayer classico dove puoi costruire, esplorare e sopravvivere insieme ad altri giocatori nell'isola tropicale.",
+      color: "text-green-500",
+    },
+    {
+      icon: "fas fa-gift",
+      title: "Gumball Box",
+      description: "Modalità speciale con premi e sorprese casuali da scoprire in misteriose scatole sparse per l'isola.",
+      color: "text-purple-500",
+    },
+    {
+      icon: "fas fa-rocket",
+      title: "Space Prison",
+      description: "Avventura spaziale dove devi sopravvivere e prosperare in una prigione galattica con tecnologie futuristiche.",
       color: "text-blue-500",
     },
     {
-      image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
-      title: "Community Attiva",
-      description: "Una comunità italiana amichevole e accogliente, sempre pronta ad aiutarsi a vicenda nelle avventure più epiche.",
+      icon: "fas fa-palm-tree",
+      title: "Oasi",
+      description: "Modalità rilassante in un'oasi tropicale perfetta per costruire e godersi l'atmosfera paradisiaca.",
       color: "text-emerald-400",
     },
     {
-      image: "https://pixabay.com/get/g6fc3dcc7596c9d9bfa5f0dc3d057bc10847374e50a7e7ef51a85283632053d33449e3ebee53b010a779c93776446f45c53dce8acc39d974a480d03830f72538a_1280.jpg",
-      title: "Eventi Speciali",
-      description: "Competizioni settimanali, costruzioni collaborative e eventi stagionali che mantengono l'esperienza sempre fresca e divertente.",
-      color: "text-orange-500",
+      icon: "fas fa-fire",
+      title: "Lava Rise",
+      description: "Sfida adrenalinica dove devi sopravvivere mentre la lava sale costantemente, mettendo alla prova le tue abilità.",
+      color: "text-red-500",
     },
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-gray-800 dark:to-gray-900">
+    <section id="modalita" className="py-20 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-gray-800 dark:to-gray-900">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-16 gradient-text">Perché Scegliere Clibify?</h2>
+        <h2 className="text-4xl font-bold text-center mb-16 gradient-text">Modalità di Gioco</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
+          {gameModes.map((mode, index) => (
             <div
               key={index}
               className="glass-effect p-8 rounded-2xl transform hover:scale-105 transition-all duration-300"
             >
-              <img
-                src={feature.image}
-                alt={feature.title}
-                className="w-full h-48 object-cover rounded-xl mb-6"
-              />
-              <h3 className={`text-2xl font-bold mb-4 ${feature.color}`}>
-                {feature.title}
+              <div className="w-16 h-16 island-gradient rounded-full flex items-center justify-center mx-auto mb-6">
+                <i className={`${mode.icon} text-white text-2xl`} />
+              </div>
+              <h3 className={`text-2xl font-bold mb-4 text-center ${mode.color}`}>
+                {mode.title}
               </h3>
-              <p className="opacity-80">{feature.description}</p>
+              <p className="opacity-80 text-center">{mode.description}</p>
             </div>
           ))}
         </div>

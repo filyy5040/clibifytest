@@ -9,8 +9,7 @@ export default function Navigation() {
   const navLinks = [
     { href: "#home", label: "Home" },
     { href: "#server-info", label: "Server" },
-    { href: "#news", label: "News" },
-    { href: "#regole", label: "Regole" },
+    { href: "#modalita", label: "Modalità" },
     { href: "#discord", label: "Discord" },
   ];
 
