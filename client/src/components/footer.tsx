@@ -5,14 +5,11 @@ export default function Footer() {
     { href: "#home", label: "Home" },
     { href: "#server-info", label: "Info Server" },
     { href: "#news", label: "News" },
-    { href: "#regole", label: "Regole" },
   ];
 
   const communityLinks = [
-    { href: "#", label: "Discord" },
-    { href: "#", label: "Forum" },
-    { href: "#", label: "YouTube" },
-    { href: "#", label: "Instagram" },
+    { href: "https://discord.gg/2zbP9CztEd", label: "Discord" },
+    { href: "https://www.tiktok.com/@clibifymc", label: "TikTok" },
   ];
 
   const scrollToSection = (href: string) => {
@@ -35,7 +32,6 @@ export default function Footer() {
               <span className="text-2xl font-bold gradient-text">Clibify</span>
             </div>
             <p className="opacity-70">
-              Il server Minecraft tropicale più bello d'Italia. Unisciti alla nostra avventura paradisiaca!
             </p>
           </div>
 
@@ -73,7 +69,7 @@ export default function Footer() {
             <ul className="space-y-2 opacity-70">
               <li>
                 <i className="fas fa-envelope mr-2" />
-                admin@clibify.xyz
+                 clibifymc@gmail.com
               </li>
               <li>
                 <i className="fas fa-server mr-2" />
@@ -88,7 +84,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center opacity-60">
-          <p>&copy; 2024 Clibify Server. Tutti i diritti riservati. Minecraft è un marchio registrato di Mojang Studios.</p>
+          <p>&copy; 2025 Clibify Server. Tutti i diritti riservati. Minecraft è un marchio registrato di Mojang Studios.</p>
         </div>
       </div>
     </footer>

@@ -12,7 +12,7 @@ export default function DiscordSection() {
             <i className="fab fa-discord text-white text-3xl" />
           </div>
           <h3 className="text-2xl font-bold mb-4">Discord Server</h3>
-          <p className="opacity-80 mb-6">Oltre 1,000 membri attivi della community Clibify!</p>
+          <p className="opacity-80 mb-6">Entra ora nella community di ClibifyMC</p>
           <a 
             href="https://discord.gg/2zbP9CztEd" 
             target="_blank" 

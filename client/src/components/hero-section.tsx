@@ -47,11 +47,11 @@ export default function HeroSection() {
         </div>
 
         <h1 className="text-6xl md:text-8xl font-bold mb-6 gradient-text animate-pulse-slow">
-          Clibify
+          ClibifyMC
         </h1>
 
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-80">
-          Benvenuto nell'isola tropicale più emozionante di Minecraft! Esplora, costruisci e sopravvivi nel nostro mondo paradisiaco.
+          Benvenuto su ClibifyMC! Esplora, costruisci e sopravvivi nel nostro Server!
         </p>
 
         <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
